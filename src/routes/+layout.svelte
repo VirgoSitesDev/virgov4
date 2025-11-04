@@ -52,6 +52,9 @@
 		<div class="mr-24">
 			<FooterBrand href="/" src={logo_ext_3} alt="Virgo" aClass="flex mb-6" />
 			<p class=" text-gray-600 dark:text-gray-400">People Beyond AI</p>
+			<p class=" text-gray-600 dark:text-gray-400">
+				VIRGO S.r.l. Strada comunale delle Corti, 54 - 31100 TREVISO - TV - P.IVA: 05543270267
+			</p>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Brands</h2>
