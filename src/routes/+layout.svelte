@@ -11,6 +11,36 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Virgo</title>
+
+	<script type="text/javascript">
+		var _iub = _iub || [];
+		_iub.csConfiguration = {
+			cookiePolicyInOtherWindow: true,
+			perPurposeConsent: true,
+			siteId: 2797714,
+			cookiePolicyId: 51115786,
+			banner: {
+				acceptButtonColor: '#00778F',
+				acceptButtonDisplay: true,
+				closeButtonRejects: true,
+				customizeButtonDisplay: true,
+				explicitWithdrawal: true,
+				fontSizeBody: '12px',
+				fontSizeCloseButton: '18px',
+				listPurposes: true,
+				logo: null,
+				position: 'float-bottom-right'
+			}
+		};
+		_iub.csLangConfiguration = { it: { cookiePolicyId: 51115786 } };
+	</script>
+	<script type="text/javascript" src="//cs.iubenda.com/sync/2797714.js"></script>
+	<script
+		type="text/javascript"
+		src="//cdn.iubenda.com/cs/iubenda_cs.js"
+		charset="UTF-8"
+		async
+	></script>
 </svelte:head>
 
 {@render children?.()}
