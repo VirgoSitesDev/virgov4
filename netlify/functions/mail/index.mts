@@ -23,7 +23,7 @@ const handler: Handler = async function (event) {
 
 	//automatically generated snippet from the email preview
 	//sends a request to an email handler for a subscribed email
-	await fetch(`${process.env.URL}/.netlify/functions/emails/message`, {
+	const res = await fetch(`${process.env.URL}/.netlify/functions/emails/message`, {
 		headers: {
 			'netlify-emails-secret': process.env.NETLIFY_EMAILS_SECRET as string
 		},
@@ -38,13 +38,22 @@ const handler: Handler = async function (event) {
 				company: requestBody.company,
 				website: requestBody.website,
 				subject: requestBody.subject,
-				email: requestBody.contact
+				contact: requestBody.contact
 			}
 		})
 	});
 
+	if (!res.ok) {
+		const errorBody = await res.text();
+		console.error('Email send failed:', res.status, errorBody);
+		return {
+			statusCode: res.status,
+			body: JSON.stringify({ error: 'Failed to send email', detail: errorBody })
+		};
+	}
+
 	return {
-		statusCode: 200, //OK
+		statusCode: 200,
 		body: JSON.stringify('Email sent!')
 	};
 };
