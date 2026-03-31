@@ -4,4 +4,4 @@
 [[plugins]]
 	package = "@netlify/plugin-emails"
 [build.environment]
-	NODE_VERSION = "20"
+	NODE_VERSION = "22"
