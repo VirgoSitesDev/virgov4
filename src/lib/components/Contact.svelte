@@ -18,10 +18,10 @@
 				surname,
 				company,
 				website,
-				subject: message,
+				message,
 				contact: contactPreference === 'email' ? email : phone
 			};
-			const response = await fetch('/.netlify/functions/mail', {
+			const response = await fetch('https://formspree.io/f/xreoaqgk', {
 				headers: {
 					Accept: 'application/json',
 					'Content-Type': 'application/json'
