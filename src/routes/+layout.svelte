@@ -25,6 +25,7 @@
 			<p class=" text-gray-600 dark:text-gray-400">
 				VIRGO S.r.l. Strada comunale delle Corti, 54 - 31100 TREVISO - TV - P.IVA: 05543270267
 			</p>
+			<img src="/banner-air.jpeg" alt="Banner AIR" class="mt-6 max-w-xs" />
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Brands</h2>
